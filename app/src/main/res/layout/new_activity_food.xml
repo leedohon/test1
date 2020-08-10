@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/foodContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_bg">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="326dp"
+        android:background="@drawable/food_line">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/food_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/food_title">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/alert_popup"
+        android:layout_width="512dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/alert_yellow"
+        android:gravity="center"
+        android:paddingRight="0dp"
+        android:paddingTop="1dp"
+        android:text="TextView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- 하단 바 -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#66000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/food_wrapper"
+        android:layout_width="1920dp"
+        android:layout_height="612dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/food_packer1"
+            style="@style/food_packer_style"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="25dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/food_packer2"
+            style="@style/food_packer_style"
+            android:layout_alignTop="@id/food_packer1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/food_packer1"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/food_packer3"
+            style="@style/food_packer_style"
+            android:layout_alignTop="@id/food_packer1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/food_packer2"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/food_packer4"
+            style="@style/food_packer_style"
+            android:layout_alignTop="@id/food_packer1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/food_packer3"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/food_packer5"
+            style="@style/food_packer_style"
+            android:layout_alignTop="@id/food_packer1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/food_packer4"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/food_bottom_text_parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FF000000"
+        android:paddingLeft="63dp"
+        android:paddingRight="63dp">
+
+        <TextView
+            android:id="@+id/food_bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FF000000"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="TextViewT                                                                                                                                                                               w"
+            android:textColor="#FFFFFFFF"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_above="@+id/food_bottom_text_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/food_check">
+
+        <TextView
+            android:id="@+id/food_origin_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textColor="#FF000000"
+            android:textSize="35sp" />
+    </FrameLayout>
+
+</RelativeLayout>

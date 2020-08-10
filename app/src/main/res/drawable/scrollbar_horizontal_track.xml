@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="68dp"
+        android:top="8dp">
+        <shape>
+            <solid android:color="#CCCCCC" />
+            <size android:height="3dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="24dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="21dp">
+        <shape>
+            <solid android:color="#FFCCCCCC" />
+        </shape>
+    </item>
+    <item
+        android:bottom="30dp"
+        android:drawable="@drawable/seat_scroll_bar_message_hori"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="28dp">
+    </item>
+</layer-list>

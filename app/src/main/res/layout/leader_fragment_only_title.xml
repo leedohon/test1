@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/org_title"
+        android:layout_width="409dp"
+        android:layout_height="82dp"
+        android:background="@drawable/new_title_2_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leader_team"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="team"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+<!--원래꺼-->
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="60dp"
+        android:background="@drawable/org_title2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leader_team"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="team"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="28dp" />
+    </LinearLayout>
+</LinearLayout>
+
+-->

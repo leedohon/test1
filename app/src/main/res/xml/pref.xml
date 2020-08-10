@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory android:title="Viewer 설정">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="whole_mode"
+            android:summary="전체 조직도 모드를 설정합니다."
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="전체 조직도 모드" />
+        <ListPreference
+            android:defaultValue="1"
+            android:key="team_select"
+            android:dependency="whole_mode"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="%s"
+            android:title="부서 선택" />
+        <MultiSelectListPreference
+            android:key="org_layout_select"
+            android:title="부서별 대표자 레이아웃 설정" />
+        <lab.nicc.kioskyoungcheon.IntEditTextPreference
+            android:defaultValue="120"
+            android:key="auto_home"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="화면 자동 넘김 시간 (초)" />
+        <MultiSelectListPreference
+            android:key="team_list_select"
+            android:title="링크 팀 선택"
+            />
+        <MultiSelectListPreference
+            android:key="building_select"
+            android:title="청사 표시 선택" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="food_mode"
+            android:summary="식단표 모드를 설정합니다."
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="식단표 모드" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="screen_saver"
+            android:summary="화면 보호기 모드를 설정합니다."
+            android:title="화면보호기 모드" />
+        <MultiSelectListPreference
+            android:key="show_public_data"
+            android:title="전체 데이터 표출 여부 설정" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Manager 설정">
+        <EditTextPreference
+            android:defaultValue="@string/server_address"
+            android:key="server_address"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="서버 주소 설정" />
+        <Preference
+            android:key="manually_update"
+            android:title="전체 데이터 수동 업데이트" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="전체 설정">
+        <Preference
+            android:key="systemSettings"
+            android:title="시스템 설정" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="control_mode"
+            android:summary="상/하단 제어 바 표시/숨김"
+            android:title="제어바 설정" />
+        <Preference
+            android:key="offManager"
+            android:title="한눈에 조직도 종료" />
+        <Preference
+            android:key="back"
+            android:title="조직도로 돌아가기" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="프로그램 정보">
+        <Preference
+            android:key="viewer_version"
+            android:title="1.0.0" />
+        <Preference
+            android:key="manager_version"
+            android:title="1.0.0" />
+    </PreferenceCategory>
+</PreferenceScreen>

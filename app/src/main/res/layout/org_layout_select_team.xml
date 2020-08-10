@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="441dp"
+    android:layout_height="448dp"
+    android:layout_gravity="center"
+    android:background="@drawable/team_separate_img"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="441dp"
+        android:layout_height="448dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:text="aaa"/>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">한눈에조직도</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">section: %1$d</string>
+    <string name="staff_path">/data/data/lab.nicc.kioskhne/staff/</string>
+    <string name="gallery_path">/data/data/lab.nicc.kioskhne/gallery/</string>
+
+    <string name="server_address">http://111.7.200.185:8080/</string>
+    <string name="server_address_yctemp">http://111.7.200.185:8080/</string>
+
+    <string name="admin_mode_pw">nicc</string>
+    <string name="_1층">1F</string>
+    <string name="_2층">2F</string>
+    <string name="_3층">3F</string>
+    <string name="_4층">4F</string>
+    <string name="_5층">5F</string>
+    <string name="_6층">6F</string>
+    <string name="_7층">7F</string>
+    <string name="_8층">8F</string>
+    <string name="_9층">9F</string>
+    <string name="_전체">Preview</string>
+    <string name="auto_home_integer_message">30 ~ 300 사이의 정수 값을 입력해주세요.</string>
+    <string name="clock_icon">""</string>
+    <string name="데이터없음">0-0</string>
+
+    <string name="시장">5100000-5100057</string>
+    <string name="부시장">5100000-5100058</string>
+
+    <string name="정책기획실">5100000-5100223</string>
+    <string name="청렴감사실">5100000-5100224</string>
+    <string name="홍보전산실">5100000-5100225</string>
+
+    <string name="행정지원국">5100000-5100226</string>
+    <string name="경제환경산업국">5100000-5100227</string>
+    <string name="문화관광복지국">5100000-5100228</string>
+    <string name="도시건설국">5100000-5100206</string>
+
+    <string name="총무과">5100226-5100231</string>
+    <string name="인구정책과">5100226-5100232</string>
+    <string name="세정과">5100226-5100233</string>
+    <string name="회계과">5100226-5100234</string>
+    <string name="새마을체육과">5100226-5100235</string>
+    <string name="종합민원과">5100226-5100236</string>
+
+    <string name="일자리노사과">5100227-5100237</string>
+    <string name="기업유치과">5100227-5100238</string>
+    <string name="환경보호과">5100227-5100239</string>
+    <string name="자원순환과">5100227-5100240</string>
+    <string name="산림과">5100227-5100241</string>
+
+    <string name="문화예술과">5100228-5100244</string>
+    <string name="관광진흥과">5100228-5100245</string>
+    <string name="복지정책과">5100228-5100246</string>
+    <string name="사회복지과">5100228-5100247</string>
+    <string name="가족행복과">5100228-5100248</string>
+
+    <string name="도시계획과">5100206-5100214</string>
+    <string name="건설과">5100206-5100215</string>
+    <string name="교통행정과">5100206-5100217</string>
+    <string name="안전재난하천과">5100206-5100216</string>
+    <string name="건축디자인과">5100206-5100242</string>
+    <string name="지적정보과">5100206-5100243</string>
+
+    <string name="보건소">TEAMCODE</string>
+
+    <string name="보건위생과">5100028-5100186</string>
+    <string name="건강관리과">5100028-5100082</string>
+
+    <string name="농업기술센터">TEAMCODE</string>
+
+    <string name="농업정책과">5100034-5100220</string>
+    <string name="과수한방과">5100034-5100134</string>
+    <string name="축산과">5100034-5100221</string>
+    <string name="농촌지도과">5100034-5100078</string>
+    <string name="기술지원과">5100034-5100135</string>
+
+    <string name="상수도사업소">5100000-5100126</string>
+    <string name="환경사업소">5100000-5100032</string>
+    <string name="체육시설사업소">5100000-5100127</string>
+    <string name="공원관리사업소">5100000-5100230</string>
+    <string name="의회사무국">5100000-5100027</string>
+    <string name="평생학습관">5100000-5100229</string>
+
+    <string name="교육문화센터">5100000-5100176</string>
+    <string name="시민회관">5100000-5100187</string>
+
+
+    <string name="금호읍">5100000-5100037</string>
+    <string name="청통면">5100000-5100038</string>
+    <string name="화산면">5100000-5100040</string>
+    <string name="화북면">5100000-5100041</string>
+    <string name="화남면">5100000-5100042</string>
+    <string name="자양면">5100000-5100043</string>
+    <string name="임고면">5100000-5100044</string>
+    <string name="고경면">5100000-5100045</string>
+    <string name="북안면">5100000-5100046</string>
+    <string name="대창면">5100000-5100047</string>
+    <string name="동부동">5100000-5100048</string>
+    <string name="중앙동">5100000-5100049</string>
+    <string name="완산동">5100000-5100051</string>
+    <string name="신녕면">5100000-5100079</string>
+    <string name="서부동">5100000-5100080</string>
+    <string name="남부동">5100000-5100081</string>
+
+
+    <string name="textview">TextView</string>
+</resources>
+

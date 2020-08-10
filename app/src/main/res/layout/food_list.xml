@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/food_date"
+        android:layout_width="258dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/food_date_out_box"
+        android:gravity="center"
+        android:text="food_date"
+        android:textColor="#FFFFFFFF"
+        android:textSize="40sp"
+        android:shadowColor="#4D412E"
+        android:shadowDx="0"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.5"/>
+
+    <FrameLayout
+        android:id="@+id/food_circle"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/food_date"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/food_out_circle">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/food_box"
+        android:layout_width="319dp"
+        android:layout_height="420dp"
+        android:layout_below="@+id/food_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/food_out_box">
+
+        <TextView
+            android:id="@+id/food_day_of_week"
+            android:layout_width="317dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:shadowColor="#4D412E"
+            android:shadowDx="0"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"
+            android:text="TextView"
+            android:textColor="#FFFFFFFF"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/food_contents"
+            android:layout_width="317dp"
+            android:layout_height="311dp"
+            android:layout_below="@+id/food_day_of_week"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="TextView"
+            android:textColor="#FF000000"
+            android:textSize="31sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/building_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/alert_popup"
+        android:layout_width="512dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/alert_yellow"
+        android:gravity="center"
+        android:paddingRight="0dp"
+        android:paddingTop="1dp"
+        android:text="TextView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/rightbar"
+            style="@style/right_bar_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/new_ico_datetime" />
+
+            <lab.nicc.kioskyoungcheon.DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="DigitalClock"
+                android:textColor="#ffffff"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout> <!-- 시계 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/title_round"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:id="@+id/gj_logo"
+                style="@style/logo_img_style" />
+
+            <ImageView
+                android:id="@+id/gj_line"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/logo_line" />
+
+            <TextView
+                android:id="@+id/teamLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:fontFamily="@font/nanummyeongjobold"
+                android:gravity="center_vertical"
+                android:text="Team name"
+                android:textColor="#ffffff"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/new_btn_home" />
+    </LinearLayout> <!-- 타이틀 -->
+
+    <RelativeLayout
+        android:id="@+id/flipper"
+        android:layout_width="1840dp"
+        android:layout_height="720dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/contents_box_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/flip_list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="85dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_1"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_2"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_2"
+                    style="@style/floor_text_style"
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_2"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_2"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_2"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_3"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_3"
+                    style="@style/floor_text_style"
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_3"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_3"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_3"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_4"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_4"
+                    style="@style/floor_text_style"
+
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_4"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_4"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_4"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_5"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_5"
+                    style="@style/floor_text_style"
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_5"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_5"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_5"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_6"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_6"
+                    style="@style/floor_text_style"
+
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_6"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_6"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_6"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_7"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_7"
+                    style="@style/floor_text_style"
+
+                    android:fontFamily="@font/nanumsquarer"
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_7"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_7"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_7"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_8"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_8"
+                    style="@style/floor_text_style"
+
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_8"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_8"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_text_layout_8"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_9"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_9"
+                    style="@style/floor_text_style"
+
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_9"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_9"
+                    android:text="Ground" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/building_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/nanummyeongjobold"
+                android:text="1층"
+                android:textColor="#e2ba5a"
+                android:textSize="37sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stage_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/building_name_text"
+                android:fontFamily="@font/nanummyeongjobold"
+                android:text="층별안내"
+                android:textColor="#e2ba5a"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/flip_list_border"
+                android:layout_width="239dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/building_name_text"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="22dp"
+                android:background="#9c9c9c">
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/floor_text_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flip_list_border"
+                android:layout_marginTop="0dp"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/flip_btn_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="205dp"
+                    android:background="@drawable/flip_list_btn">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="239dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/floor_text_1"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#9c9c9c">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/floor_text_1"
+                    style="@style/floor_text_style"
+                    android:text="1층" />
+
+                <TextView
+                    android:id="@+id/floor_text_contents_1"
+                    style="@style/floor_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/floor_text_1"
+                    android:text="Ground" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/building_flipper"
+            android:layout_width="1280dp"
+            android:layout_height="650dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="440dp"
+            android:layout_marginTop="0dp" />
+
+        <Button
+            android:id="@+id/prev"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="386dp"
+            android:background="@drawable/arrow_button_left"
+            android:rotation="180" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/arrow_button_left" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/firstTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="본관"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/firstTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="신관"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thirdTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/secondTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="증축관"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fourthTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/thirdTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="별관"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fifthTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/fourthTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="별관"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sixthTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/fifthTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:text="별관"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seventhTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/sixthTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eighthTab"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/seventhTab"
+            android:background="@drawable/save_btn_xml"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inner_bar"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/new_mnu_bg">
+
+        <TextView
+            android:id="@+id/notice_bar"
+            android:layout_width="750dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="34dp"
+            android:background="@drawable/notice_round"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Notice Title"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/bottom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_1_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_past"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:srcCompat="@drawable/new_mnu_2_out" />
+
+            <ImageView
+                android:id="@+id/bottom_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_3_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_4_over" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_5_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_6_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_7_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                app:srcCompat="@drawable/new_mnu_8_out" />
+        </LinearLayout>
+    </RelativeLayout> <!-- 하단 바 -->
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#66000000"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/leader_layout"
+    android:layout_width="420dp"
+    android:layout_height="220dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/leader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.36"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/org_title"
+            android:layout_width="409dp"
+            android:layout_height="82dp"
+            android:background="@drawable/new_title_2_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/leader_team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="team"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="409dp"
+            android:layout_height="133dp"
+            android:layout_below="@+id/org_title"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_member_1_bg" />
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="133dp"
+            android:layout_below="@+id/org_title"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp"
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:id="@+id/leader_pic"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/no_img_b" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/leader_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.42"
+                    android:text="No Data"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/leader_duty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/leader_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/leader_name"
+                    android:layout_weight="0.42"
+                    android:text="No Data"
+                    android:textColor="#555555"
+                    android:textSize="17dp" />
+
+                <RelativeLayout
+                    android:layout_width="260dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/leader_name"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/circle"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:src="@drawable/org_circle" />
+
+                    <TextView
+                        android:id="@+id/leader_mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/circle"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="No Data"
+                        android:textColor="#555555"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/leader_isWorking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/org_working_in"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/work_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/new_led_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    <!--원래꺼-->
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/leader_layout"
+        android:layout_width="440dp"
+        android:layout_height="230dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="438dp"
+            android:layout_height="180dp"
+            android:src="@drawable/org_box_leader"
+            android:scaleType="fitXY"
+            android:layout_alignStart="@id/leader"
+            android:layout_alignTop="@+id/leader"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="55dp"/>
+
+        <RelativeLayout
+            android:id="@id/leader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="415dp"
+                android:layout_height="60dp"
+                android:background="@drawable/org_title2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/leader_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="team"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="27dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="65dp"
+                android:orientation="horizontal"
+                android:id="@+id/top">
+
+                <ImageView
+                    android:id="@+id/leader_pic"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/no_img_b"
+                    android:layout_marginLeft="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/leader_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.42"
+                        android:text="No Data"
+                        android:textSize="25dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/leader_duty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/leader_name"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0.42"
+                        android:text="No Data"
+                        android:textSize="17dp"
+                        android:textColor="#555555"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/org_line"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_below="@id/leader_duty" />
+
+                    <RelativeLayout
+                        android:layout_width="260dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/team_duty"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="0dp">
+                        <ImageView
+                            android:id="@+id/circle"
+                            android:layout_marginLeft="0dp"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/org_circle"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/leader_mission"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/circle"
+                            android:text="No Data"
+                            android:textSize="18dp"
+                            android:textColor="#555555"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/leader_isWorking"
+                        android:background="@drawable/org_working_in"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/work_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/work_icon"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    -->

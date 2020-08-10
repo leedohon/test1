@@ -1,0 +1,153 @@
+<!--원래꺼-->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:id="@+id/leader_container1"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/team1_container1"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/leader_container1"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:id="@+id/team1_container2"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/leader_container1"
+        android:layout_toEndOf="@+id/team1_container1" />
+
+    <FrameLayout
+        android:id="@+id/team1_container3"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/team1_container1"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:id="@+id/team1_container4"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/team1_container2"
+        android:layout_toEndOf="@+id/team1_container3" />
+
+    <FrameLayout
+        android:id="@+id/team1_container5"
+        android:layout_width="205dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/team1_container3"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:id="@+id/team1_container6"
+        android:layout_width="205dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/team1_container4"
+        android:layout_toEndOf="@+id/team1_container3" />
+</RelativeLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp">
+
+    <ImageView
+        android:id="@+id/organization_main_image"
+        android:layout_width="410dp"
+        android:layout_height="235dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="496dp"
+        android:background="#FFFFFFFF"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/leader_container1"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/team1_container1"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/leader_container1" />
+
+    <FrameLayout
+        android:id="@+id/team1_container2"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/leader_container1"
+        android:layout_toEndOf="@+id/team1_container1" />
+
+    <FrameLayout
+        android:id="@+id/team1_container3"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/team1_container1" />
+
+    <FrameLayout
+        android:id="@+id/team1_container4"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/team1_container2"
+        android:layout_toEndOf="@+id/team1_container3" />
+
+    <FrameLayout
+        android:id="@+id/team1_container5"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/team1_container3">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/team1_container6"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/team1_container4"
+        android:layout_toEndOf="@+id/team1_container3">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/team1_container7"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/team1_container5" />
+
+    <FrameLayout
+        android:id="@+id/team1_container8"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/team1_container6"
+        android:layout_toEndOf="@+id/team1_container5" />
+
+    <FrameLayout
+        android:id="@+id/team1_container9"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/team1_container7" />
+
+    <FrameLayout
+        android:id="@+id/team1_container10"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/team1_container8"
+        android:layout_toEndOf="@+id/team1_container7" />
+
+</RelativeLayout>

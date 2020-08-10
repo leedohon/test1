@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/about_content">
+
+    <TextView
+        android:id="@+id/alert_popup"
+        android:layout_width="512dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/alert_yellow"
+        android:gravity="center"
+        android:paddingRight="0dp"
+        android:paddingTop="1dp"
+        android:text="TextView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/rightbar"
+            style="@style/right_bar_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/new_ico_datetime" />
+
+            <lab.nicc.kioskyoungcheon.DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="DigitalClock"
+                android:textColor="#ffffff"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout> <!-- 시계 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/title_round"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:id="@+id/gj_logo"
+                style="@style/logo_img_style" />
+
+            <ImageView
+                android:id="@+id/gj_line"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/logo_line" />
+
+            <TextView
+                android:id="@+id/teamLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:fontFamily="@font/nanummyeongjobold"
+                android:gravity="center_vertical"
+                android:text="Team name"
+                android:textColor="#ffffff"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/new_btn_home" />
+    </LinearLayout> <!-- 타이틀 -->
+
+    <RelativeLayout
+        android:id="@+id/tour_content"
+        android:layout_width="match_parent"
+        android:layout_height="965dp"
+        android:visibility="gone">
+
+        <ViewFlipper
+            android:id="@+id/about_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="965dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/about_next"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@+id/about_flipper"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/arrow_button_left"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/about_prev"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@+id/about_flipper"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/arrow_button_left"
+            android:rotation="180"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wrapper4"
+        android:layout_width="1840dp"
+        android:layout_height="720dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="215dp"
+        android:orientation="horizontal"
+        android:paddingRight="110dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/select_packer1"
+            style="@style/select_packer_style" />
+
+        <LinearLayout
+            android:id="@+id/select_packer2"
+            style="@style/select_packer_style" />
+
+        <LinearLayout
+            android:id="@+id/select_packer3"
+            style="@style/select_packer_style" />
+
+        <LinearLayout
+            android:id="@+id/select_packer4"
+            style="@style/select_packer_style" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice_main"
+        android:layout_width="1840dp"
+        android:layout_height="720dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/contents_box_bg"
+        android:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/about_container"
+            android:layout_width="1814dp"
+            android:layout_height="720dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:id="@+id/about_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inner_bar"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/new_mnu_bg">
+
+        <TextView
+            android:id="@+id/notice_bar"
+            android:layout_width="750dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="34dp"
+            android:background="@drawable/notice_round"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Notice Title"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/bottom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_1_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_past"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:srcCompat="@drawable/new_mnu_2_out" />
+
+            <ImageView
+                android:id="@+id/bottom_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_3_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_4_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_5_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_6_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/new_mnu_7_out" />
+
+            <ImageView
+                style = "@style/border_style"
+                android:src="@drawable/new_mnu_line" />
+
+            <ImageView
+                android:id="@+id/bottom_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                app:srcCompat="@drawable/new_mnu_8_over" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/up_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/notice_main"
+        android:layout_alignTop="@+id/notice_main"
+        android:layout_marginTop="-51dp"
+        app:srcCompat="@drawable/up_down_text" />
+
+    <FrameLayout
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

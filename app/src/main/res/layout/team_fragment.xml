@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/team_layout"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/top"
+        android:layout_alignTop="@+id/top"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_member_2_bg" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="210dp"
+        android:layout_height="138dp"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="0.36"
+        android:paddingTop="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/team_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/no_img_b" />
+
+            <RelativeLayout
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/isWorking_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team_isWorking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_above="@+id/team_duty"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/org_working_in"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/work_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/new_led_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/team_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/isWorking_layout"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0.42"
+                        android:text="name"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="23dp" />
+
+                    <TextView
+                        android:id="@+id/team_duty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/team_name"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.42"
+                        android:text="duty"
+                        android:textAlignment="viewStart"
+                        android:textColor="#555555"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/org_circle" />
+
+            <TextView
+                android:id="@+id/team_mission"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_toEndOf="@+id/circle"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="missiddddddddddddddddddddddddddddon"
+                android:textColor="#555555"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+    <!--원래꺼-->
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/team_layout"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="185dp"
+            android:src="@drawable/org_box_team"
+            android:scaleType="fitXY"
+            android:layout_alignStart="@+id/top"
+            android:layout_alignTop="@+id/top"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="0dp"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="165dp"
+            android:layout_weight="0.36"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/team_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/no_img_b" />
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/isWorking_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/team_isWorking"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_above="@+id/team_duty"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="20dp"
+                            android:background="@drawable/org_working_in"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/work_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/work_icon_blue"/>
+
+                    <TextView
+                        android:id="@+id/team_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/isWorking_layout"
+                        android:layout_weight="0.42"
+                        android:text="name"
+                        android:textSize="23dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/team_duty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/team_name"
+                        android:layout_weight="0.42"
+                        android:layout_marginLeft="5dp"
+                        android:text="duty"
+                        android:textSize="17dp"
+                        android:textColor="#555555"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="8dp"
+                android:background="@drawable/org_team_line"/>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="30dp">
+                <ImageView
+                    android:id="@+id/circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/org_circle"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/team_mission"
+                    android:layout_width="170dp"
+                    android:layout_height="38dp"
+                    android:layout_toEndOf="@+id/circle"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="missiddddddddddddddddddddddddddddon"
+                    android:textColor="#555555"
+                    android:textSize="15dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    -->

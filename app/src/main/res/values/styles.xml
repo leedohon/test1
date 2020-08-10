@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="floor_text_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_marginLeft">22dp</item>
+    </style>
+
+    <style name="b_container_sytle">
+        <item name="android:layout_width">202dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="shine_style">
+        <item name="android:background">@drawable/shine2</item>
+    </style>
+
+    <style name="logo_img_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="right_bar_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/clock_round</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">28dp</item>
+        <item name="android:paddingRight">52dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="scrollbar_shape_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">insideInset</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_vertical_track</item>
+    </style>
+
+    <style name="scrollbar_shape_style_horizontal">
+        <item name="android:scrollbarAlwaysDrawHorizontalTrack">true</item>
+        <item name="android:scrollbarStyle">insideInset</item>
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_horizontal_thumb</item>
+        <item name="android:scrollbarTrackHorizontal">@drawable/scrollbar_horizontal_track</item>
+    </style>
+
+    <style name="select_packer_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">110dp</item>
+        <item name="android:layout_marginBottom">110dp</item>
+        <item name="android:layout_marginLeft">110dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="packer_style">
+        <item name="android:layout_width">335dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="food_packer_style">
+        <item name="android:layout_width">319dp</item>
+        <item name="android:layout_height">612dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="border_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+</resources>

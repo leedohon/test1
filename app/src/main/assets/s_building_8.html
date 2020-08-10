@@ -1,0 +1,41 @@
+<html>
+<title>NICC IndoorMap</title>
+<style> * {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);left:115px;} </style>
+
+<div style="position: absolute;"> <img src="building/s_building_8.jpg" usemap="#image-map" id="img"/> </div>
+<div id="pin" style="position: absolute; left:1500px; top: 1000px;"> <img src="building/ss.png"> </div>
+
+<map name="image-map" id="map">
+    <area id="5090024-5090025" title="보건사업과" coords="644,326,644,495,798,497,784,327" shape="poly">
+    <area id="5090024-5090064" title="건강관리과" coords="702,240,707,315,786,315,777,239" shape="poly">
+</map>
+
+<script src="./res/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function set_var(roomCode) {
+    var url = new URL(document.URL);
+    var startRoomCode = roomCode;
+
+    var pin = document.getElementById("pin");
+
+    var startRoom = document.getElementById(startRoomCode);
+    if (!startRoom) {
+        pin.style.display="none";
+        buildingInterface.getExists("none", startRoomCode);
+    } else {
+        buildingInterface.getExists(document.getElementById("img").src, startRoomCode);
+    }
+
+    var startRoomCoords = startRoom.coords;
+    var startCoords = startRoomCoords.split(",");
+    for (var i in startCoords) {
+      startCoords[i] *= 1;
+    }
+    var startX = (startCoords[0] + startCoords[2] + startCoords[4] + startCoords[6]) / 4;
+    var startY = (startCoords[1] + startCoords[3] + startCoords[5] + startCoords[7]) / 4;
+
+    pin.style.left = startX - 45 + 115;
+    pin.style.top = startY - 90;
+}
+</script>
+</html>

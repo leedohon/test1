@@ -1,0 +1,45 @@
+<html>
+<title>NICC IndoorMap</title>
+<style> * {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);left:115px;} </style>
+
+<div style="position: absolute;"> <img src="building/s_building_13.jpg" usemap="#image-map" id="img"/> </div>
+<div id="pin" style="position: absolute; left:1500px; top: 1000px;"> <img src="building/ss.png"> </div>
+
+<map name="image-map" id="map">
+  <area id="9990000-9990001" title="종합민원과", coords="283,280,269,456,490,456,492,281" shape="poly">
+  <area id="9990000-9990002" title="사회복지과", coords="579,365,579,453,666,453,664,366" shape="poly">
+  <area id="9990001-9990003" title="세무과", coords="618,333,618,221,727,220,731,332" shape="poly">
+  <area id="9990001-9990004" title="주민생활지원과", coords="666,365,669,455,725,454,723,366" shape="poly">
+  <area id="9990001-9990005" title="회계과", coords="726,365,730,454,819,454,814,365" shape="poly">
+  <area id="5090165-5090171" title="산림녹지과", coords="851,352,982,351,991,456,860,457" shape="poly">
+</map>
+
+<script src="./res/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function set_var(roomCode) {
+    var url = new URL(document.URL);
+    var startRoomCode = roomCode;
+
+    var pin = document.getElementById("pin");
+
+    var startRoom = document.getElementById(startRoomCode);
+    if (!startRoom) {
+        pin.style.display="none";
+        buildingInterface.getExists("none", startRoomCode);
+    } else {
+        buildingInterface.getExists(document.getElementById("img").src, startRoomCode);
+    }
+
+    var startRoomCoords = startRoom.coords;
+    var startCoords = startRoomCoords.split(",");
+    for (var i in startCoords) {
+      startCoords[i] *= 1;
+    }
+    var startX = (startCoords[0] + startCoords[2] + startCoords[4] + startCoords[6]) / 4;
+    var startY = (startCoords[1] + startCoords[3] + startCoords[5] + startCoords[7]) / 4;
+
+    pin.style.left = startX - 45 + 115;
+    pin.style.top = startY - 90;
+}
+</script>
+</html>

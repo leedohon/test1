@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="2dp"
+        android:left="8dp"
+        android:right="64dp">
+        <shape>
+            <solid android:color="#FFCCCCCC"/>
+        </shape>
+    </item>
+    <item android:right="27dp"
+        android:left="19dp">
+        <shape>
+            <solid android:color="#FFCCCCCC" />
+            <size android:width="29dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/seat_scroll_bar_message_vert"
+        android:top="10dp"
+        android:right = "33dp"
+        android:left = "28dp"
+        android:bottom = "10dp">
+    </item>
+</layer-list>

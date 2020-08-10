@@ -1,0 +1,46 @@
+<html width=1115 height=650>
+<title>NICC IndoorMap</title>
+<style> * {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);left:115px;} </style>
+
+<div style="position: absolute;"> <img src="building/s_building_4.jpg" usemap="#image-map" id="img"/> </div>
+<div id="pin" style="position: absolute; left:1500px; top: 1000px;"> <img src="building/ss.png"> </div>
+
+<map name="image-map" id="map">
+    <area id="5090000-5090124" title="기획감사실" coords="357,226,350,334,491,334,492,226" shape="poly">
+    <area id="5090154-5090155" title="자치행정과" coords="277,366,270,456,357,458,362,367" shape="poly">
+    <area id="5090000-5090053" title="부시장실" coords="399,367,395,458,488,458,489,369" shape="poly">
+    <area id="5090000-5090052" title="시장실" coords="546,368,546,456,637,456,637,368" shape="poly">
+    <area id="5090165-5090166" title="도시과" coords="666,221,668,334,731,334,727,222" shape="poly">
+    <area id="5090000-5090140" title="투자전략실" coords="848,324,848,346,879,348,877,323" shape="poly">
+    <area id="5090000-5090125" title="경제활성화실" coords="884,351,892,458,992,458,982,350" shape="poly">
+</map>
+
+<script src="./res/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function set_var(roomCode) {
+    var url = new URL(document.URL);
+    var startRoomCode = roomCode;
+
+    var pin = document.getElementById("pin");
+
+    var startRoom = document.getElementById(startRoomCode);
+    if (!startRoom) {
+        pin.style.display="none";
+        buildingInterface.getExists("none", startRoomCode);
+    } else {
+        buildingInterface.getExists(document.getElementById("img").src, startRoomCode);
+    }
+
+    var startRoomCoords = startRoom.coords;
+    var startCoords = startRoomCoords.split(",");
+    for (var i in startCoords) {
+      startCoords[i] *= 1;
+    }
+    var startX = (startCoords[0] + startCoords[2] + startCoords[4] + startCoords[6]) / 4;
+    var startY = (startCoords[1] + startCoords[3] + startCoords[5] + startCoords[7]) / 4;
+
+    pin.style.left = startX - 45 + 115;
+    pin.style.top = startY - 90;
+}
+</script>
+</html>
